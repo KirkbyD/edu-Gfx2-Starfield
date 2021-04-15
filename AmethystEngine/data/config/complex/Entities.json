@@ -1,0 +1,186 @@
+{
+  "Entities": [
+    {
+      "Name": "Ground Plane",
+      "Physics": [
+        {
+          "Shape": "Plane",
+          "Position": "0.0f 0.0f 0.0f",
+          "Normal": "0.0f 1.0f 0.0f"
+        }
+      ],
+      "Graphics": [
+        {
+          "Name": "Ground",
+          "Mesh": "FlatTerrain",
+          "Texture": "TerrainTexture",
+          "Scale": "1.0f"
+        }
+      ]
+    },
+    {
+      "Name": "-X Bound",
+      "Physics": [
+        {
+          "Shape": "Plane",
+          "Position": "-128.0f 0.0f 0.0f",
+          "Normal": "1.0f 0.0f 0.0f"
+        }
+      ]
+    },
+    {
+      "Name": "X Bound",
+      "Physics": [
+        {
+          "Shape": "Plane",
+          "Position": "128.0f 0.0f 0.0f",
+          "Normal": "-1.0f 0.0f 0.0f"
+        }
+      ]
+    },
+    {
+      "Name": "-Z Bound",
+      "Physics": [
+        {
+          "Shape": "Plane",
+          "Position": "0.0f 0.0f -128.0f",
+          "Normal": "0.0f 0.0f 1.0f"
+        }
+      ]
+    },
+    {
+      "Name": "Z Bound",
+      "Physics": [
+        {
+          "Shape": "Plane",
+          "Position": "0.0f 0.0f 128.0f",
+          "Normal": "0.0f 0.0f -1.0f"
+        }
+      ]
+    },
+    {
+      "Name": "Animated Entity",
+      "Physics": [
+        {
+          "Shape": "Ball",
+          "Position": "30.0f 30.0f 30.0f",
+          "Radius": "1.0f",
+          "Mass": "0.0f"
+        },
+        {
+          "Shape": "Ball",
+          "Bone": "RightFoot",
+          "Radius": "1.0f",
+          "Mass": "0.0f"
+        },
+        {
+          "Shape": "Ball",
+          "Bone":  "LeftFoot",
+          "Radius": "1.0f",
+          "Mass": "0.0f"
+        }
+      ],
+      "Graphics": [
+        {
+          "Name": "Ground",
+          "Mesh": "Sphere",
+          "Texture": "Steel",
+          "Scale": "1.0f"
+        }
+      ],
+      "Anima":
+      [
+        {
+          "Name": "Testchara",
+          "File": "data/models/elf/chara_f_elf_bind_pose.fbx",
+          "Scale":  "0.1",
+          "Animations": [
+            {
+              "Name": "Idle",
+              "File": "data/models/elf/chara_f_elf_idle.fbx"
+            },
+            {
+              "Name": "WalkF",
+              "File": "data/models/elf/chara_f_elf_forward_walk.fbx"
+            },
+            {
+              "Name": "RunF",
+              "File": "data/models/elf/chara_f_elf_forward_run.fbx"
+            },
+            {
+              "Name": "WalkB",
+              "File": "data/models/elf/chara_f_elf_backwards_walk.fbx"
+            },
+            {
+              "Name": "WalkL",
+              "File": "data/models/elf/chara_f_elf_strafe_left_walk.fbx"
+            },
+            {
+              "Name": "RunL",
+              "File": "data/models/elf/chara_f_elf_strafe_left_run.fbx"
+            },
+            {
+              "Name": "WalkR",
+              "File": "data/models/elf/chara_f_elf_strafe_right_walk.fbx"
+            },
+            {
+              "Name": "RunR",
+              "File": "data/models/elf/chara_f_elf_strafe_right_run.fbx"
+            },
+            {
+              "Name": "JumpF",
+              "File": "data/models/elf/chara_f_elf_jump_forward.fbx"
+            },
+            {
+              "Name": "JumpB",
+              "File": "data/models/elf/chara_f_elf_jump_backward.fbx"
+            },
+            {
+              "Name": "TurnL",
+              "File": "data/models/elf/chara_f_elf_left_turn.fbx"
+            },
+            {
+              "Name": "TurnR",
+              "File": "data/models/elf/chara_f_elf_right_turn.fbx"
+            },
+            {
+              "Name": "IdleToFight",
+              "File": "data/models/elf/chara_f_elf_transition_idle_unarmed.fbx"
+            },
+            {
+              "Name": "FightToIdle",
+              "File": "data/models/elf/chara_f_elf_transition_unarmed_idle.fbx"
+            },
+            {
+              "Name": "Punch",
+              "File": "data/models/elf/chara_f_elf_unarmed_attack.fbx"
+            },
+            {
+              "Name": "FightIdle",
+              "File": "data/models/elf/chara_f_elf_unarmed_idle.fbx"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "Noob Lucker",
+      "Physics": [
+        {
+          "Shape": "Ball",
+          "Position": "77.0f 77.0f -77.0f",
+          "Radius": "7.7f",
+          "Mass":  "7.7f"
+        }
+      ],
+      "Graphics": [
+        {
+          "Name": "Ground",
+          "Mesh": "Sphere",
+          "Texture": "TerrainTexture",
+          "Scale": "7.7f"
+        }
+      ]
+    }
+  ]
+}
